@@ -12,7 +12,7 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
 
   console.log('[Sign] %s', '准备登录')
-  await page.goto("https://www.hjtnt.co/auth/login");
+  await page.goto("https://www.hjtnt.work/auth/login");
   await page.type('#email', env?.EMAIL || '');
   await page.type('#password', env?.PASSWORD || '');
   await page.click('.login');
